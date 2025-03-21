@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://backend-7zjc.onrender.com';
 
 export const getUsers = () => axios.get(`${API_URL}/users`);
 export const getUserById = (id) => axios.get(`${API_URL}/users/${id}`);
