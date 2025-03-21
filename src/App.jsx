@@ -13,6 +13,8 @@ function App ()  {
         fetchUsers();
     }, []);
 
+    
+
     const fetchUsers = async () => {
         const response = await getUsers();
         setUsers(response.data);
