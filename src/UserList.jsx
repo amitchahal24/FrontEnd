@@ -1,5 +1,3 @@
-// Amit Chahal - 0003832
-
 
 import React from 'react';
 import { deleteUser } from './services/api';
@@ -19,6 +17,7 @@ function UserList ({ users, onEdit, fetchUsers }) {
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>org</th>
                         <th>Actions</th>
                     </tr>
                 </thead>

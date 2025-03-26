@@ -1,5 +1,3 @@
-// Amit Chahal - 0003832
-
 
 import React, { useState, useEffect } from 'react';
 import { createUser, updateUser } from './services/api';
@@ -39,6 +37,11 @@ function UserForm ({ currentUser, onSave })  {
                 <label>Email:</label>
                 <input type="email" name="email" value={user.email} onChange={handleChange} />
             </div>
+            <div>
+                <label>org:</label>
+                <input type="org" name="org" value={user.org} onChange={handleChange} />
+            </div>
+            
             <button type="submit">Save</button>
         </form>
     );

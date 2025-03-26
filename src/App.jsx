@@ -1,5 +1,3 @@
-// Amit Chahal - 0003832
-
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
@@ -14,8 +12,6 @@ function App ()  {
     useEffect(() => {
         fetchUsers();
     }, []);
-
-    
 
     const fetchUsers = async () => {
         const response = await getUsers();
@@ -34,7 +30,7 @@ function App ()  {
     return (
         <div className="container">
             <h1>User Management</h1>
-            <h2>By AMIT CHAHAL</h2>
+            <h2>By Carlos Abaffy</h2>
             <UserForm currentUser={currentUser} onSave={handleSave} />
             <UserList users={users} onEdit={handleEdit} fetchUsers={fetchUsers} />
         </div>
