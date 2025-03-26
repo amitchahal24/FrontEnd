@@ -27,6 +27,7 @@ function UserList ({ users, onEdit, fetchUsers }) {
                             <td>{user._id.substring(user._id.length - 6)}</td>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
+                             <td>{user.org}</td>
                             <td>
                                 <button onClick={() => onEdit(user)}>Edit</button>
                                 <button onClick={() => handleDelete(user._id)}>Delete</button>
