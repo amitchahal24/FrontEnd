@@ -30,7 +30,7 @@ function App ()  {
     return (
         <div className="container">
             <h1>User Management</h1>
-            <h2>By Carlos Abaffy</h2>
+            <h2>By Amit Chahal</h2>
             <UserForm currentUser={currentUser} onSave={handleSave} />
             <UserList users={users} onEdit={handleEdit} fetchUsers={fetchUsers} />
         </div>
